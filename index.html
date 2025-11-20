@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- one signal sdk -->
+    <script
+      src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
+      defer
+    ></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(async function (OneSignal) {
+        await OneSignal.init({
+          appId: '78c83ec3-0d96-469c-b450-22edeebfdeb8',
+          safari_web_id:
+            'web.onesignal.auto.10bba952-d3e6-4be7-b269-bd5caae877a4',
+          notifyButton: {
+            enable: true,
+          },
+        });
+      });
+    </script>
+<!-- uncomment one line -->
+ <script fcm_service_path="/firebase-messaging-sw.js" src="https://sdk.smartdx.co/handlers/ce496e55043e4f7c97b1241f5ef5ba94.sdk" defer="defer"></script>
+<!-- <script fcm_service_path="/firebase-messaging-sw.js" src="https://sdk.smartdx.co/handlers/efb1c214e1dc4400beb27a41c1b2192d.sdk" defer="defer"></script> -->
+<!--     <script fcm_service_path="/firebase-messaging-sw.js" src="https://sdk.smartdx.co/handlers/148078ba36c84ba9a8cf771b8510bde5.sdk" defer="defer"></script> -->
+
+    <title>Modern Car Dealership Website</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
