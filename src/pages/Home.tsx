@@ -70,7 +70,7 @@ const handleCustomEvent = () => {
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
             Drive Your
-            <span className="text-red-600"> Dreams 1</span>
+            <span className="text-red-600"> Dreams 8</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in-delay">
             Discover premium vehicles that combine luxury, performance, and reliability
