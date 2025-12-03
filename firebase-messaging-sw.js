@@ -1,0 +1,1 @@
+importScripts('https://sdk.resul.team/Scripts/push-sw.js');
